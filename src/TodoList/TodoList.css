@@ -1,0 +1,36 @@
+/* src/TodoList/TodoList.css */
+
+.TodoList {
+  background-color: #e7e7e7;
+  border-radius: 8px;
+  width:80%;
+  margin:16px;
+  padding: 16px;
+  /* Centrar horizontalmente el elemento */
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Cambia la sombra por defecto */
+  position: relative;
+}
+
+.EmptyTodoList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Resto de estilos */
+}
+
+.EmptyTodoList .TodoButton {
+  position: relative;
+  bottom: unset;
+  left: unset;
+  transform: none;
+  /* Resto de estilos */
+}
+
+.ContainerLoader {
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  margin:100px;
+}

@@ -1,0 +1,20 @@
+/* src/CheckIcon/CheckIcon.css */
+
+/* FILENAME: CheckIcon  */
+
+
+.CheckIcon {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+  filter: invert(40%) sepia(53%) saturate(582%) hue-rotate(62deg) brightness(105%) contrast(87%);
+}
+
+.CheckIcon:hover {
+  transform: scale(1.2);
+}
+
+.TodoItem.completed .CheckIcon {
+  filter: invert(89%) sepia(0%) saturate(159%) hue-rotate(65deg) brightness(93%) contrast(94%);
+}

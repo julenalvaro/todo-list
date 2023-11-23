@@ -1,0 +1,77 @@
+/* src/CreateTodoForm/CreateTodoForm.css */
+
+.CreateTodoForm {
+  background: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0; /* Establecer opacidad inicial a 0 */
+  transform: translateY(-20px); /* Mover hacia arriba */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.CreateTodoForm.active {
+  opacity: 1; /* Mostrar formulario con opacidad completa */
+  transform: translateY(0); /* Restaurar posición normal */
+}
+
+.CreateTodoForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.CreateTodoForm textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+.CreateTodoForm-buttons {
+  text-align: center;
+  width: 100%;
+}
+
+/* Estilos para los botones */
+.CreateTodoForm-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px; /* Espacio horizontal entre botones */
+  width: auto; /* Ancho automático para que los botones se ajusten al contenido */
+  display: inline-block; /* Mostrar los botones en línea */
+}
+
+/* Estilo específico para el botón "Aceptar" */
+.CreateTodoForm-button.accept {
+  background-color: #448F30;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.CreateTodoForm-button.accept:hover {
+  background-color: #356023;
+}
+
+/* Estilo específico para el botón "Cancelar" */
+.CreateTodoForm-button.cancel {
+  background-color: #A43744;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.CreateTodoForm-button.cancel:hover {
+  background-color: #8C3038;
+}

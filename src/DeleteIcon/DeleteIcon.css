@@ -1,0 +1,21 @@
+/* src/DeleteIcon/DeleteIcon.css */
+
+/* FILENAME: DeleteIcon  */
+
+
+
+.DeleteIcon {
+  width: 24px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+  filter: invert(24%) sepia(43%) saturate(2244%) hue-rotate(322deg) brightness(96%) contrast(86%);
+}
+
+.DeleteIcon:hover {
+  transform: scale(1.2);
+}
+
+.TodoItem.completed .DeleteIcon {
+  filter: invert(89%) sepia(0%) saturate(159%) hue-rotate(65deg) brightness(93%) contrast(94%);
+}

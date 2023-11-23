@@ -1,0 +1,19 @@
+/* src/TodoSearch/TodoSearch.css */
+
+/* FILENAME: TodoSearch  */
+
+.TodoSearch {
+  padding: 8px 8px;
+  width: 80%;
+  margin: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out; /* Agrega transiciones para sombra y borde */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Cambia la sombra por defecto */
+}
+
+/* Cambia la sombra y el color del borde al hacer hover */
+.TodoSearch:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Cambia la sombra al hacer hover, haciéndola más grande y difuminada */
+  border-color: #00bcd4; /* Cambia el color del borde al hacer hover a azul celeste */
+}

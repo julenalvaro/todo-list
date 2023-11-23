@@ -1,0 +1,34 @@
+/* src/TodoItem/TodoItem.css */
+
+/* FILENAME: TodoItem  */
+
+
+.TodoItem {
+  padding: 8px 16px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 15px;
+}
+
+.TodoItem:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.TodoItem:last-child {
+  border-bottom: none;
+}
+
+.TodoItem.completed p {
+  text-decoration: line-through;
+  color: #bdbbbb;
+}
+
+.TodoItem p {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+}

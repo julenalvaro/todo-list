@@ -1,0 +1,21 @@
+/* src/TodoCounter/TodoCounter.css */
+
+
+
+.todo-counter {
+  color: rgb(48, 47, 47);
+  padding: 5px;
+  text-align: center;
+  font-size: larger;
+  font-weight: normal;
+  width: 90%;
+  /* Centrar horizontalmente el elemento */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.todo-counter span {
+  font-weight: bold;
+}

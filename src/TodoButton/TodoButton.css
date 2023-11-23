@@ -1,0 +1,44 @@
+/* src/TodoButton/TodoButton.css */
+
+
+.TodoButton {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute; /* Establece el posicionamiento absoluto en relación con el contenedor */
+  bottom: -24px;
+  right: -24px;
+  width: 48px; /* Tamaño del botón */
+  height: 48px; /* Tamaño del botón */
+  display: flex; /* Para centrar el contenido SVG */
+  align-items: center; /* Centra verticalmente el contenido SVG */
+  justify-content: center; /* Centra horizontalmente el contenido SVG */
+  overflow: hidden; /* Previene cualquier desbordamiento del SVG */
+  z-index:1 ;
+  padding: 0;
+  margin:0;
+}
+
+.TodoButton img {
+  width: 100%; /* SVG ocupa todo el tamaño del botón */
+  height: auto; /* Mantiene la proporción del SVG */
+  filter: invert(88%) sepia(8%) saturate(812%) hue-rotate(71deg) brightness(90%) contrast(84%);
+}
+
+@keyframes rotateButton {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg); /* Gira hacia adelante */
+  }
+  100% {
+    transform: rotate(0deg); /* Regresa a la posición inicial */
+  }
+}
+
+.TodoButton:hover {
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1); /* Ajusta el último valor para el tamaño de la sombra */
+  animation: rotateButton 1s ease-in-out; /* Aplica la animación al hacer hover */
+  animation-iteration-count: infinite; /* Hace que la animación se repita infinitamente */
+}
