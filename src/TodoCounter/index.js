@@ -1,3 +1,5 @@
+// src/TodoCounter/index.js
+
 import React, { useContext } from 'react';
 import './TodoCounter.css'; // Importa el archivo CSS
 import { TodoContext } from '../TodoContext';

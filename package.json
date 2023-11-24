@@ -1,6 +1,7 @@
 {
   "name": "platzi-intro-react-base",
   "version": "0.1.0",
+  "homepage": "https://julenalvaro.github.io/todo-list/",
   "dependencies": {
     "clipboardy": "^4.0.0",
     "react": "^18",
